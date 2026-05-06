@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>番茄钟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="work">
+  <!-- 标题栏 -->
+  <div class="titlebar">
+    <span class="titlebar-title">番茄钟</span>
+    <div class="titlebar-buttons">
+      <button id="btn-minimize" title="最小化">─</button>
+      <button id="btn-close" title="关闭">✕</button>
+    </div>
+  </div>
+
+  <!-- 标签栏 -->
+  <div class="tab-bar" id="tab-bar">
+    <!-- 标签页由 JS 动态生成 -->
+  </div>
+
+  <!-- 主内容 -->
+  <div class="container" id="container">
+    <!-- 内容由 JS 动态生成 -->
+  </div>
+
+  <!-- 设置面板 -->
+  <div class="settings-overlay" id="settings-overlay">
+    <div class="settings-panel">
+      <h3>设置</h3>
+      <div class="setting-item">
+        <label>工作时长 (分钟)</label>
+        <input type="number" id="setting-work" min="1" max="90" value="25">
+      </div>
+      <div class="setting-item">
+        <label>短休息 (分钟)</label>
+        <input type="number" id="setting-short" min="1" max="30" value="10">
+      </div>
+      <div class="setting-item">
+        <label>长休息 (分钟)</label>
+        <input type="number" id="setting-long" min="1" max="60" value="20">
+      </div>
+      <div class="setting-item">
+        <label>长休息间隔 (番茄数)</label>
+        <input type="number" id="setting-interval" min="2" max="10" value="4">
+      </div>
+      <div class="settings-buttons">
+        <button class="btn btn-secondary" id="btn-settings-cancel">取消</button>
+        <button class="btn btn-primary" id="btn-settings-save">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
