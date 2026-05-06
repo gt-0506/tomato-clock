@@ -175,7 +175,7 @@ class PomodoroApp {
       addBtn = document.createElement('button');
       addBtn.className = 'tab-add';
       addBtn.textContent = '+';
-      addBtn.title = '新建番茄钟';
+      addBtn.title = '新建小猫钟';
       addBtn.addEventListener('click', () => this.addTab());
       $('#tab-bar').appendChild(addBtn);
     }
@@ -318,7 +318,7 @@ class PomodoroApp {
       this.notify(isLong ? '长休息时间到！' : '休息一下吧！', '辛苦了，喝杯水放松一下~');
     } else {
       tab.switchMode('work');
-      this.notify('休息结束', '开始新的番茄吧！');
+      this.notify('休息结束', '开始新的小猫吧！');
     }
 
     this.renderContent();
