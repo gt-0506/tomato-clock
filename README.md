@@ -64,7 +64,9 @@ npm start
 
 ## 截图
 
-![番茄钟界面](https://via.placeholder.com/400x560/2C3E50/FFFFFF?text=🍅+番茄钟)
+| 主界面 | 设置 |
+|--------|------|
+| ![主界面](screenshots/main.png) | ![设置](screenshots/settings.png) |
 
 ## License
 
