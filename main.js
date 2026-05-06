@@ -36,7 +36,7 @@ function createTray() {
     { label: '显示窗口', click: () => mainWindow && mainWindow.show() },
     { label: '退出', click: () => app.quit() },
   ]);
-  tray.setToolTip('小猫钟');
+  tray.setToolTip('番茄钟');
   tray.setContextMenu(contextMenu);
   tray.on('click', () => {
     if (mainWindow) {
@@ -68,7 +68,7 @@ ipcMain.on('close-window', async () => {
     type: 'question',
     buttons: ['最小化到托盘', '退出程序'],
     defaultId: 0,
-    title: '小猫钟',
+    title: '番茄钟',
     message: '你想最小化到托盘还是退出程序？',
   });
   if (result.response === 0) {

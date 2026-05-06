@@ -209,7 +209,7 @@ body {
   letter-spacing: 4px;
 }
 
-/* 小猫计数 */
+/* 番茄计数 */
 .pomodoro-count {
   display: flex;
   gap: 10px;
